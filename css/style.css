@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #131313;
+}
+.loginscreen{
+    background-color: #161616;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 66;
+}
+.loginscreen::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.671);
+    width: 320px;
+    height: 320px;
+    border-top-left-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    filter: drop-shadow(0 0  30px cyan) ;
+    border: 1px solid cyan;
+    top: 100px;
+    left: 950px;
+    animation: anime1 10s linear infinite ;
+}
+.loginscreen::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.753);
+    width: 320px;
+    height: 320px;
+    border-top-left-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    filter: drop-shadow(0 0  30px green) ;
+    border: 1px solid green;
+    top: 300px;
+    left: 100px;
+    animation: anime 10s ease infinite ;
+}
+@keyframes anime1{
+    0%{
+        top: 100px;
+        left: 950px;
+    }
+    30%{
+        top: 180px;
+        left: 940px;
+    }
+    60%{
+        top: 180px;
+        left: 940px;
+    }
+    100%{
+        top: 100px;
+        left: 950px;
+    }
+}
+@keyframes anime{
+    0%{
+        top: 300px;
+        left: 100px;
+    }
+    30%{
+        top: 290px;
+        left: 190px;
+    }
+    60%{
+        top: 290px;
+        left: 186px;
+    }
+    100%{
+        top: 300px;
+        left: 100px;
+    }
+}
+.boxgg{
+    width: 80%;
+    height: 580px;
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 2;
+    box-shadow: 25px 25px 25px 1px black;
+    border: 2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.loginbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+}.text p{
+    color: white;
+    font-weight: bolder;
+    max-width: 365px;
+    text-align: justify;
+}
+#git{
+    width: 180px;
+    height: 45px;
+    position: relative;
+    left: -95px;
+    margin-top:15px ;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    font-size: 18px;
+    border: none;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    cursor: pointer;
+}
+#git:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.loginr{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;   
+}
+.so{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.i{
+    width: 330px;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 30px;
+}
+.noix{
+    display: flex;
+}
+#login{
+    width: 120px;
+    height: 36px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bolder;
+    margin-right: 13px;
+}
+#login:hover{
+    filter: drop-shadow(0 0 2px blue);
+}
+@media (max-width:1115px){
+    .loginscreen::before{
+        display: none;
+    }
+    .loginscreen::after{
+        display: none;
+    }
+}
+@media (max-width:1017px){
+    .loginbox{
+        justify-content: center;
+        width: 100%;
+    }
+    .text{
+        display: none;
+    }
+    .loginr{
+        width: 100%;
+    }
+    .input{
+        width: 95%;
+    }
+    .i{
+        width: 100%;
+    }
+}

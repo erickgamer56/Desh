@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="google-signin-client_id" content="225025604893-umgksv7jtca7r41m0ufrgmjo58sueoc7.apps.googleusercontent.com">
+</head>
+<body>
+    <div class="loginscreen" id="loginscreen">
+        <div class="boxgg">
+            <div class="loginbox">
+                <div class="text">
+                    <h1>Bem-Vindo</h1>
+                    <p>
+                        Olá, Este site foi feito por um programador inesperiente no assunto, mas claro que seu objetivo é ajudar a vida do programador que criou o site
+                    </p>
+                    <a href="https://github.com/erickgamer56" target="_blank"><input type="button" value="GitHub" id="git"></a>
+                </div>
+                <div class="loginr">
+                    <div class="input">
+                        <h1 class="so">Somente Login Autorizado</h1>
+                        <input type="text" name="" id="i1" class="i" placeholder="Email">
+                        <input type="text" name="" id="i2" class="i" placeholder="Senha">
+                        <div class="noix">
+                            <input type="button" value="Logar" id="login">
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="perfil" id="perfil">
+        <div class="boxl">
+            <div class="sem4">
+                <img src="" id="img2">
+                <h2 id="name2"></h2>
+            </div>
+            <div class="change">
+                <div>
+                    <div class="sem6">
+                        <p>mudar seu nome no weblocal</p>
+                    </div>
+                    <div class="sem sem2">
+                        <input type="text"id="mudar" placeholder="Nome Novo" maxlength="20">
+                        <div style="margin-top: 20px;">
+                            <input type="button" value="Mudar" id="btn1"  class="btn">
+                            <input type="button" value="Reset" id="btn2"  class="btn">
+                        </div>
+                    </div>
+                    <div class="sem sem3" style="margin-top: 20px;">
+                        <p>mudar cor do site</p>
+                        <div style="display: flex;">
+                            <input type="color" id="color">
+                            <div id="click"></div>
+                        </div>
+                    </div>
+                    <div class="style">
+                        <a href="#" onclick="signOut();">
+                            <input type="button" value="Sair Do Site"  class="inp3">
+                        </a>
+                        <input type="button" value="Fechar Janela" class="inp3" id="janela">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Politicas</a></li>
+                <li><a href="#">Novidades</a></li>
+            </ul>
+            <div class="pera" id="pera">
+                <h3 id="nomeusuario" class="per2"></h3>
+                <div class="per">
+                    <img src="" id="logoimg" width="40px" height="40px">
+                </div>
+            </div>
+        </nav>
+        <section class="init">
+            <div class="text1" id="text1">
+                <h1>Bem-Vindo</h1>
+                <p>Erick Nogueira</p>
+                <a href="https://www.youtube.com/channel/UCLu6cjJleT7yAXoz3zme6Vw" target="_blank"><input type="button" value="Seu Canal" class="canal"></a>
+            </div>
+            <div class="news" id="news">
+                <div class="n1">INICIO</div>
+                <div class="boxs">
+                    <a href="https://www.youtube.com/c/FocodoBrasil" target="_blank" class="a">
+                        <div class="box">
+                            <img src="img/unnamed1.jpg" class="img">
+                            <div class="info">
+                                <h1>Foco Do Brasil</h1>
+                                <p>Canal Para novidades boas para o brasil.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/erickgamer56/" target="_blank" class="a">
+                        <div class="box">
+                            <img src="img/unnamed2.png" class="img">
+                            <div class="info">
+                                <h1>Instagram</h1>
+                                <p>Meu instagram pessoal.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/erickgamer56" target="_blank" class="a">
+                        <div class="box">
+                            <img src="img/giy.png" class="img">
+                            <div class="info">
+                                <h1>GitHub</h1>
+                                <p>Meu GitHub pessoal.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/c/doutorbiscoitobiscoito" target="_blank" class="a">
+                        <div class="box">
+                            <img src="img/unnamed3.jpg" class="img">
+                            <div class="info">
+                                <h1>DoutorBiscoito</h1>
+                                <p>O Pro Player do brasil</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

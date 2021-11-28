@@ -1,0 +1,248 @@
+main{
+    overflow: hidden;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul a{
+    color: white;
+    text-decoration: none;
+    margin: 6px;
+    font-weight: bold;
+}
+.per{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.per2{
+    color: white;
+}
+.pera{
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.init{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+.text1{
+    color: white;
+    margin-left: 20px;
+    transform: translateX(-300px);
+    transition: transform 1s ease;
+}
+.text1 h1{
+    font-size: 60px;
+}
+.text1 p{
+    font-size: 30px;
+}
+.canal{
+    width: 170px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 13px;
+    border: none;
+    cursor: pointer;
+}
+.news{
+    position: absolute;
+    right: 20px;
+    width: 960px;
+    height: 540px;
+    background-color: black;
+    margin-top: 30px ;
+    transition: transform 1s ease;
+    transform: translateY(-300px);
+}
+.n1{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.box{
+    width: 320px;
+    height: 122px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.info{
+    margin-left: 12px;
+}
+.info p{
+    font-weight: bold;
+}
+.a{
+    color: black;
+    text-decoration: none;
+}
+.perfil{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.733);
+    z-index: 3;
+    display: none;
+}
+.sem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.sem4{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+#img2{
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.boxl{
+    width: 360px;
+    height: 500px;
+    background-color: rgb(167, 167, 167);
+}
+.sem2{
+    margin-top: 20px;
+    flex-direction: column;
+}
+.sem6{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#mudar{
+    width: 70%;
+    height: 39px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+.btn{
+    width: 111px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sem3{
+    display: flex;
+    flex-direction: column;
+}
+.inp3{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+.style{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#click{
+    width: 52px;
+    height: 27px;
+    background-color: #131313;
+    margin-left: 5px;
+}
+@media (max-width:1115px){
+    .menu ul {
+        display: none;
+    }
+    .text1{
+        display: none;
+    }
+    .news{
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 90%;
+    }
+}
+@media (max-width:730px) {
+    .news{
+        height: unset;
+    }
+    .boxs{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .a{
+        width: 100%;
+    }
+}
+@media (max-width:315px){
+    .img{
+        display: none;
+    }
+}
